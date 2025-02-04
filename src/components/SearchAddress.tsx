@@ -28,7 +28,7 @@ const SearchAddress = () => {
         const response = await fetch(`https://cpg172763.protheus.cloudtotvs.com.br:1386/rest/xconstobi/consultaenderecamento?cCPFTit=${cpfTitular}&cNomeTit=${nomeTitular.toUpperCase()}&cNomFal=${encodeURIComponent(nomeFalecido.toUpperCase())}`);
         const data: Contract = await response.json();
 
-        let timerInterval;
+        let timerInterval: NodeJS.Timeout | undefined;
          Swal.fire({
             title: "Buscando dados do contrato",
             timer: 2000,
