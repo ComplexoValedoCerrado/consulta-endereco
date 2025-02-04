@@ -1,0 +1,129 @@
+.appsDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.439);
+    border-radius: 30px;
+    padding: 40px 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 700px;
+}
+
+.valeLogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.descricao {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.appsStoresDiv {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.appsStoresDiv img {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 50px;
+}
+
+@media (max-width: 1320px) {
+
+}
+
+@media (max-width: 1210px) {
+
+}
+
+@media (max-width: 1026px) {
+
+}
+
+
+@media (max-width: 800px) {
+    .valeLogo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .appsDiv {
+        padding: 20px 10px;
+        width: 90%;
+    }
+
+    .contentDiv {
+        padding: 0px 10px;
+    }
+
+    .appsDiv {
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .appsStoresDiv img {
+        width: 130px;
+        height: 45px;
+    }
+
+    .descricao {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    .valeLogo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .appsDiv {
+        padding: 20px 10px;
+        width: 90%;
+    }
+
+    .contentDiv {
+        padding: 0px 10px;
+    }
+
+    .appsDiv {
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .appsStoresDiv img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .appsStoresDiv {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .descricao {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
