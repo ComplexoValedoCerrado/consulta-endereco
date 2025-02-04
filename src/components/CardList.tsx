@@ -68,13 +68,13 @@ export default function CardList({data}: { data: Contract }) {
                 <div key={item.Codigo}>
                         <label 
                         htmlFor={`my_modal_${item.Codigo}`} 
-                        className="btn text-[13px] w-full bg-white text-green-700 text-bold border-none flex flex-col gap-1 p-2 h-auto min-h-[3rem]"
+                        className="btn text-[13px] w-full bg-white text-green-700 rounded-lg text-bold border-none flex flex-col gap-1 h-auto p-2 min-h-[3rem] leading-none"
                     >
                         <span className="font-bold">{item.Falecido}</span>
                         <span className="text-[12px] font-semibold">Data Sepultamento: {item.Sepultamento}</span>
                     </label>
                     <input type="checkbox" id={`my_modal_${item.Codigo}`} className="modal-toggle"/>
-                    <div className="modal " role="dialog">
+                    <div className="modal cursor-default" role="dialog">
                         <div className="modal-box justify-center bg-green-600 pt-10">
                             {item.Status.toUpperCase() === 'PROCURE A ADMINISTRACAO'.toUpperCase() ? (
                                 <div className="flex justify-center items-center w-full mb-4">

@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
 :root {
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
